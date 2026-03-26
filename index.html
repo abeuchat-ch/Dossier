@@ -7,7 +7,7 @@
   <style>
     :root{
       --bg:#f5f5f7;
-      --card:rgba(255,255,255,.82);
+      --card:rgba(255,255,255,0.9);
       --text:#111111;
       --muted:#6e6e73;
       --line:rgba(17,17,17,.08);
@@ -77,7 +77,13 @@
       display:flex;
       flex-wrap:wrap;
       gap:10px;
-      margin-bottom:26px;
+      margin-bottom:12px;
+    }
+    .hero-signal{
+      font-size:13px;
+      color:var(--muted);
+      margin:0 0 26px;
+      line-height:1.45;
     }
     .pill{
       padding:9px 14px;
@@ -91,6 +97,22 @@
       display:flex;
       flex-wrap:wrap;
       gap:12px;
+    }
+    .cta-support{
+      margin:14px 0 0;
+      max-width:100%;
+      font-size:12px;
+      font-weight:400;
+      color:var(--muted);
+      line-height:1.45;
+      letter-spacing:.01em;
+    }
+    .cta-support a{
+      color:inherit;
+      text-decoration:none;
+    }
+    .cta-support a:hover{
+      text-decoration:underline;
     }
     .btn{
       display:inline-flex;
@@ -130,7 +152,7 @@
       min-height:320px;
       background:
         linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)),
-        url('IMG_4372.JPG') center top / cover no-repeat;
+        url('IMG_4372.JPG') center 20% / cover no-repeat;
     }
     .grid{
       display:grid;
@@ -218,7 +240,7 @@
       /* Taller strip + upper anchor so faces stay in frame with background-size: cover */
       .hero-image{
         min-height:min(52vh, 480px);
-        background-position:center 12%;
+        background-position:center 20%;
       }
     }
   </style>
@@ -231,7 +253,7 @@
           <div class="eyebrow">Mietbewerbung</div>
           <h1>Familie Beuchat</h1>
           <p class="lead">
-            Langfristige, stabile Schweizer Familie mit drei Kindern. Rückkehr in die Region Zürich aus beruflichen und familiären Gründen per Mitte Juli 2026.
+            Langfristig orientierte, stabile Schweizer Familie mit drei Kindern. Rückkehr in die Region Zürich aus beruflichen und familiären Gründen per Mitte Juli 2026.
           </p>
           <div class="pill-row">
             <div class="pill">Antoine Beuchat · Managing Director, UBS</div>
@@ -239,6 +261,7 @@
             <div class="pill">3 Kinder · 12, 7, 7</div>
             <div class="pill">Langfristige Wohnperspektive</div>
           </div>
+          <p class="hero-signal">Finanziell sehr stabil · Langfristige Mietperspektive · Flexible Übergabe</p>
           <div class="cta-row">
             <a class="btn btn-primary" href="mailto:abeuchat@gmail.com" aria-label="E-Mail senden">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -261,6 +284,9 @@
               WhatsApp
             </a>
           </div>
+          <p class="cta-support">
+            <a href="mailto:abeuchat@gmail.com">abeuchat@gmail.com</a> · <a href="tel:+41789132244">+41 78 913 22 44</a>
+          </p>
         </div>
         <div class="hero-image" aria-label="Familienfoto"></div>
       </div>
@@ -270,13 +296,13 @@
       <div class="card glass">
         <h2>Über uns</h2>
         <p>
-          Wir sind eine fünfköpfige Schweizer Familie und planen die Rückkehr in die Region Zürich. Küsnacht spricht uns besonders an, da wir bereits über ein soziales Umfeld vor Ort verfügen und unsere Kinder dort zur Schule gehen werden.
+          Wir sind eine fünfköpfige Schweizer Familie und planen die Rückkehr in die Region Zürich. Bestimmte gut angebundene, familienfreundliche Wohnlagen sprechen uns besonders an, da wir Wert auf ein stabiles Umfeld und eine gute schulische Perspektive für unsere Kinder legen.
         </p>
         <p>
-          Antoine Beuchat ist Managing Director bei UBS. Dr. med. Léa Hochstrasser Beuchat ist Kinderärztin, hat die Praxis <strong>Kinderärzte Zollikon</strong> aufgebaut und erfolgreich an Monvia übergeben. Sie verfügt über eine ausgezeichnete Vernetzung und Reputation in der Region Zürich sowie am Kinderspital und freut sich darauf, ihre Tätigkeit in Zürich wieder aufzunehmen.
+          Antoine Beuchat ist Managing Director bei UBS. Dr. med. Léa Hochstrasser Beuchat ist Kinderärztin, hat eine Kinderarztpraxis in der Region Zürich aufgebaut und erfolgreich an Monvia übergeben. Sie verfügt über eine ausgezeichnete Vernetzung und Reputation in der Region Zürich sowie am Kinderspital und freut sich darauf, ihre Tätigkeit in Zürich wieder aufzunehmen.
         </p>
         <p>
-          Wir suchen ein langfristiges Zuhause in einer ruhigen, familienfreundlichen Umgebung und legen grossen Wert auf ein gepflegtes Zuhause, ein respektvolles nachbarschaftliches Umfeld sowie ein stabiles Mietverhältnis.
+          Wir suchen ein langfristiges Zuhause in einer ruhigen, familienfreundlichen Umgebung und legen grossen Wert auf ein gepflegtes Zuhause, ein respektvolles nachbarschaftliches Umfeld sowie ein stabiles Mietverhältnis. Selbstverständlich behandeln wir die Liegenschaft mit grosser Sorgfalt, als wäre es unser eigenes Zuhause.
         </p>
 
         <div class="profile-grid">
@@ -308,7 +334,7 @@
               <div class="doc-title">Einkommensnachweis</div>
               <div class="doc-sub">Compensation Statement Antoine Beuchat</div>
             </div>
-            <div>↗</div>
+            <div>🔐</div>
           </a>
 
           <a class="doc-link" href="3_Betreibung_Antoine.pdf" target="_blank" rel="noopener noreferrer">
@@ -316,7 +342,7 @@
               <div class="doc-title">Betreibungsauszug Antoine</div>
               <div class="doc-sub">Aktueller Auszug</div>
             </div>
-            <div>↗</div>
+            <div>🔐</div>
           </a>
 
           <a class="doc-link" href="4_Betreibung_Lea.pdf" target="_blank" rel="noopener noreferrer">
@@ -324,12 +350,15 @@
               <div class="doc-title">Betreibungsauszug Léa</div>
               <div class="doc-sub">Aktueller Auszug</div>
             </div>
-            <div>↗</div>
+            <div>🔐</div>
           </a>
         </div>
 
         <div class="section-note">
           Diese Seite dient als digitales Bewerbungsdossier und enthält die wichtigsten Unterlagen in übersichtlicher Form.
+        </div>
+        <div class="section-note">
+          Die Dokumente sind aus Diskretionsgründen passwortgeschützt.
         </div>
       </div>
     </section>
